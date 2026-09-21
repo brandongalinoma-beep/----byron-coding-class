@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>L06 HW Book Donation Form</title>
+    </head>
+    <body>
+        <h1><b>My Book Donation Form</b></h1>
+        <h3><p><i>Fill in the form below to donate a book</i></p></h3>
+        <p>Please fill out the following information if you would like to donate a book.</p>
+        <hr>
+
+        <form>
+            <fieldset>
+                <legend>Book Details</legend>
+
+                <label>Book Name</label><br>
+                <input type="text" id="name" placeholder="Enter the full name"><br><br>
+
+                <label>Age Rating Of Book</label><br>
+                <input type="text" id="pid" placeholder="Enter the Age Rating"><br><br>
+
+                <label>Date of When Book was Donated</label><br>
+                <input type="date" id="dob"><br><br>
+
+                <label>Author Name</label><br>
+                <input type="text" id="author" placeholder="Enter the author's name"><br><br>
+
+                <label>Book Genre</label><br>
+                <select id="genre">
+                    <option>Adventure</option>
+                    <option>Fantasy</option>
+                    <option>Science Fiction</option>
+                    <option>Horror</option>
+                    <option>Romance</option>
+                    <option>History</option>
+                    <option>Education</option>
+                </select><br><br>
+
+                <label>Book Condition</label><br>
+                <input type="radio" name="condition" value="new"> New<br>
+                <input type="radio" name="condition" value="good"> Good<br>
+                <input type="radio" name="condition" value="used"> Used<br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Donor Information</legend>
+
+                <label>Full Name</label><br>
+                <input type="text" id="fullname" placeholder="Enter your full name"><br><br>
+
+                <label>Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+                <label>Phone Number</label><br>
+                <input type="tel" id="phone" placeholder="Enter your phone number"><br><br>
+
+                <label>Why are you donating this book?</label><br>
+                <textarea id="reason" rows="5" cols="40"
+                    placeholder="Enter your reason"></textarea><br><br>
+
+                <input type="checkbox" id="permission">
+                <label for="permission">I agree to donate this book.</label><br><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
