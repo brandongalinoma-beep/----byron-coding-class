@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>L12 Zoo Rescue Tracker</title>
+
+        <!-- Internal CSS -->
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: lightblue;
+                padding: 65px 30px 30px 30px;
+                min-height: 1800px;
+            }
+
+            h1, h2 {
+                color: darkblue;
+            }
+
+            /* Fixed Position */
+            .top-bar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: darkblue;
+                color: white;
+                padding: 14px 20px;
+            }
+
+            .list-item {
+                background-color: aliceblue;
+                border: 2px solid darkblue;
+                padding: 10px 20px;
+                margin: 5px 0;
+            }
+
+            /* Relative Position */
+            .special-note {
+                position: relative;
+                left: 30px;
+                background-color: lightcyan;
+                padding: 10px 20px;
+                border: 2px solid teal;
+            }
+
+            /* Absolute Position */
+            .rescue-card {
+                position: relative;
+                background-color: white;
+                border: 3px solid teal;
+                padding: 15px 25px;
+            }
+
+            .badge {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background-color: teal;
+                color: white;
+                padding: 4px 8px;
+            }
+
+            /* Sticky Position */
+            .section-label {
+                position: sticky;
+                top: 55px;
+                background-color: teal;
+                color: white;
+                padding: 10px 20px;
+                margin: 15px 0 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Fixed -->
+        <div class="top-bar">
+            Zoo Rescue Tracker - Animal Rescue
+        </div>
+
+        <h1>Zoo Rescue Tracker!</h1>
+
+        <!-- Static -->
+        <h2>Static</h2>
+        <div class="list-item">Animal: Lion</div>
+        <div class="list-item">Age: 2 years old</div>
+
+        <!-- Relative -->
+        <h2>Relative</h2>
+        <p>This note shifts right from its normal position.</p>
+        <div class="special-note">
+            Animal Rescued!
+        </div>
+
+        <!-- Absolute -->
+        <h2>Absolute</h2>
+        <p>The badge is pinned to the corner of the card.</p>
+
+        <div class="rescue-card">
+            <p>Lion - Big Cat, 2 years</p>
+            <div class="badge">
+                Safe!
+            </div>
+        </div>
+
+        <!-- Sticky -->
+        <h2>Sticky</h2>
+        <p>Scroll down - the label locks near the top.</p>
+
+        <div class="section-label">
+            More Rescued Animals
+        </div>
+
+        <div class="list-item">Bunta - Elephant, 5 years</div>
+        <div class="list-item">Stripes - Zebra, 3 years</div>
+        <div class="list-item">Nancy - Giraffe, 4 years</div>
+        <div class="list-item">Mike - Monkey, 2 years</div>
+        <div class="list-item">Leo - Tiger, 6 years</div>
+        <div class="list-item">Coco - Parrot, 1 year</div>
+        <div class="list-item">Rocky - Rhino, 7 years</div>
+
+    </body>
 </html>
