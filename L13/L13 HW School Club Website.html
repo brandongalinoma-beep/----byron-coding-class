@@ -3,9 +3,121 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>L13/L13 HW School Club Website</title>
+        <title>L13 HW School Club Website</title>
+
+        <!-- STEP 1 - Bootstrap CSS link -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <style>
+            body {
+                background-color: #101426;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 30px 15px;
+                color: #f1f5f9;
+            }
+
+            h1 {
+                text-align: center;
+                color: #a78bfa;
+                font-size: 38px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .club-intro {
+                text-align: center;
+                margin: 20px 0 35px;
+                color: #cbd5e1;
+            }
+
+            .club-card {
+                text-align: center;
+                border: 1px solid #5145a8;
+                border-radius: 15px;
+                padding: 25px 20px;
+                margin-bottom: 20px;
+                background: linear-gradient(145deg, #202944, #29204b);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            .club-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 22px rgba(139, 92, 246, 0.3);
+            }
+
+            .club-card h3 {
+                color: #c4b5fd;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .club-card p {
+                color: #e2e8f0;
+                line-height: 1.6;
+            }
+        </style>
     </head>
+
     <body>
-        
+        <h1>My School Club Website</h1>
+
+        <div class="club-intro">
+            <p>Welcome to our school club page!</p>
+            <p>Discover your interests, learn new skills and make friends.</p>
+        </div>
+
+        <!-- STEP 2 - container keeps the layout neat and centred -->
+        <div class="container">
+
+            <!-- STEP 3 - row holds all the columns -->
+            <div class="row">
+
+                <!-- STEP 4 - responsive club cards -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="club-card">
+                        <h3>Art Club</h3>
+                        <p>Explore your creativity through drawing, painting and sketching.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="club-card">
+                        <h3>Sports Club</h3>
+                        <p>Stay active, play games and build teamwork with other students.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="club-card">
+                        <h3>Reading Club</h3>
+                        <p>Discover exciting stories and share your favourite books.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="club-card">
+                        <h3>Music Club</h3>
+                        <p>Enjoy music, learn new skills and share your talents.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="club-card">
+                        <h3>Science Club</h3>
+                        <p>Discover how the world works through science and experiments.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="club-card">
+                        <h3>Computer Club</h3>
+                        <p>Learn about technology, practise coding and create projects.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </body>
 </html>
+
