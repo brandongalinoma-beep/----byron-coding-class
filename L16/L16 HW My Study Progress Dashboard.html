@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>L16 HW My Study Progress Dashboard</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <style>
+            body {
+                background-color: #f4f0ff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .jumbotron {
+                background-color: #e6ddff;
+                border-left: 6px solid #6c4ab6;
+                margin-bottom: 25px;
+            }
+
+            .jumbotron h1 {
+                color: #6c4ab6;
+            }
+
+            .section-title {
+                color: #6c4ab6;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .progress {
+                height: 25px;
+                background-color: #ddd5ef;
+                border-radius: 8px;
+            }
+
+            .progress-bar {
+                font-weight: bold;
+            }
+
+            .btn {
+                margin: 3px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- TOPIC 1: JUMBOTRON -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1>My Study Progress Dashboard</h1>
+
+                <p class="lead">
+                    Welcome to my study dashboard! Track my subjects,
+                    celebrate completed tasks, and see how far I have
+                    progressed in my learning journey.
+                </p>
+
+                <!-- TOPIC 2: BUTTONS -->
+                <button class="btn btn-primary">Mathematics</button>
+                <button class="btn btn-success">Science</button>
+                <button class="btn btn-info">English</button>
+                <button class="btn btn-warning">History</button>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- TOPIC 3: BADGES -->
+            <h2 class="section-title">
+                Study Tasks Completed
+                <span class="badge badge-dark">4</span>
+            </h2>
+
+            <p>Mathematics
+                <span class="badge badge-primary">7 tasks</span>
+            </p>
+
+            <p>Science
+                <span class="badge badge-success">5 tasks</span>
+            </p>
+
+            <p>English
+                <span class="badge badge-info">3 tasks</span>
+            </p>
+
+            <p>History
+                <span class="badge badge-warning">4 tasks</span>
+            </p>
+
+            <!-- TOPIC 4: PROGRESS BARS -->
+            <h2 class="section-title">My Learning Progress</h2>
+
+            <p>Mathematics</p>
+            <div class="progress mb-3">
+                <div class="progress-bar"
+                     style="width: 55%; background-color: #6c4ab6;">
+                    55%
+                </div>
+            </div>
+
+            <p>Science</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success"
+                     style="width: 90%;">
+                    90%
+                </div>
+            </div>
+
+            <p>English</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-info"
+                     style="width: 75%;">
+                    75%
+                </div>
+            </div>
+
+            <p>History</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-warning"
+                     style="width: 64%;">
+                    64%
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="container-fluid text-white p-3 mt-4"
+             style="background-color: #493477;">
+            <p>My Study Progress Dashboard</p>
+            <p>Small steps every day lead to big achievements!</p>
+        </div>
+
+    </body>
+</html>
